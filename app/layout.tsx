@@ -1,6 +1,7 @@
 import { Layout } from '@/components/dom/Layout'
 import '@/global.css'
 import { Providers } from './providers'
+import { Header } from '@/components/dom/Header'
 
 export const metadata = {
   title: 'Sam Azevedo ',
@@ -18,6 +19,7 @@ export default function RootLayout({ children }: { children: any }) {
       <body>
         {/* To avoid FOUT with styled-components wrap Layout with StyledComponentsRegistry https://beta.nextjs.org/docs/styling/css-in-js#styled-components */}
         <Providers>
+          <Header />
           <Layout>{children}</Layout>
         </Providers>
       </body>

@@ -1,6 +1,8 @@
+'use client'
+
 import { Container, Text } from '@chakra-ui/react'
 
-export const Contact = () => {
+export default function Page() {
   return (
     <>
       <Container mt={70}>
